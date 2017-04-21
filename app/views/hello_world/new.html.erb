@@ -1,0 +1,9 @@
+<%= form_for Post.new do |f|%>
+
+<% end %>
+
+<% @episode.appearances.each do |appearance| %>
+  <%= link_to "Edit Appearance for #{appearance.guest.name}", edit_appearance_path(appearance) %>
+<% end %>
+
+<a href='/guests/1'>Michael J. Fox</a>
